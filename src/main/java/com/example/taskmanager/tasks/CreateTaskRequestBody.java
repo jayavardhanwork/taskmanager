@@ -11,4 +11,5 @@ import lombok.Setter;
 @NoArgsConstructor
 public class CreateTaskRequestBody {
     String name;
+    Long id;
 }
