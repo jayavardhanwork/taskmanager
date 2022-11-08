@@ -1,6 +1,5 @@
 package com.example.taskmanager.tasks;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,7 +22,7 @@ public class TasksService {
         TaskEntity savedTask = tasksRepository.save(task);
         return savedTask;
     }
-    Optional<TaskEntity> getTaskById(Long id){
+    public Optional<TaskEntity> getTaskById(Long id){
         Optional<TaskEntity> task = tasksRepository.findById(id);
         return task;
     }

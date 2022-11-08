@@ -14,7 +14,13 @@ import javax.persistence.*;
 public class NoteEntity {
     @Id @GeneratedValue(strategy = GenerationType.SEQUENCE)
     Long id;
+    @Column(nullable = false)
     String body;
     @ManyToOne
     TaskEntity task;
+
+    NoteEntity(String body, TaskEntity taskEntity){
+        this.body = body;
+        this.task = taskEntity;
+    }
 }

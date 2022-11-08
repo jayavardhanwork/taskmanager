@@ -1,11 +1,9 @@
 package com.example.taskmanager.tasks;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.scheduling.config.Task;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
-import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.Optional;
 
